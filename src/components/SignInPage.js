@@ -60,7 +60,7 @@ export default function SignIpPage(){
             <LocalStyle/>
             <Logo>My Wallet</Logo>
             <div> {signUpForm}</div>
-            <BottomLink to='/'>
+            <BottomLink to='/sign-up'>
                 <p> Primeira vez? Cadastre-se!</p>
             </BottomLink>
         </Container>
