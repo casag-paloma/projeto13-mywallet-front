@@ -8,7 +8,7 @@ import TokenContext from '../contexts/TokenContext';
 
 export default function RevenuePage(){
 
-    const URL = 'http://localhost:5000/revenue'
+    const URL = 'https://git.heroku.com/back-projeto13-mywallet-paloma.git/revenue'
 
     const [value, setValue] = useState("");
     const [description, setDescription] = useState("");

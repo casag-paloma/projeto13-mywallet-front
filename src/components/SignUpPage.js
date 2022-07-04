@@ -6,7 +6,7 @@ import axios from 'axios';
 
 export default function SignUpPage(){
 
-    const URL = 'http://localhost:5000/sign-up'
+    const URL = 'https://git.heroku.com/back-projeto13-mywallet-paloma.git/sign-up'
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
