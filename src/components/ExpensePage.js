@@ -8,7 +8,7 @@ import TokenContext from '../contexts/TokenContext';
 
 export default function ExpensePage(){
 
-    const URL = 'https://git.heroku.com/back-projeto13-mywallet-paloma.git/expense'
+    const URL = 'https://back-projeto13-mywallet-paloma.herokuapp.com/expense'
 
     const [value, setValue] = useState("");
     const [description, setDescription] = useState("");

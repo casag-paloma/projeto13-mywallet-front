@@ -7,7 +7,7 @@ import TokenContext from '../contexts/TokenContext';
 
 export default function SignIpPage(){
 
-    const URL = 'https://git.heroku.com/back-projeto13-mywallet-paloma.git/sign-in'
+    const URL = 'https://back-projeto13-mywallet-paloma.herokuapp.com/sign-in'
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const {setToken} = useContext(TokenContext);

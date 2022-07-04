@@ -7,7 +7,7 @@ import TokenContext from '../contexts/TokenContext';
 
 export default function MenuPage(){
 
-    const URL = 'https://git.heroku.com/back-projeto13-mywallet-paloma.git/'
+    const URL = 'https://back-projeto13-mywallet-paloma.herokuapp.com/'
 
     const {token} = useContext(TokenContext);
     
