@@ -30,7 +30,6 @@ export default function MenuPage(){
     }, [])
 
     function handleSucessGetList(response){
-        console.log(response.data)
         setUser(response.data.name)
         setData(response.data.files)
     }
@@ -46,7 +45,6 @@ export default function MenuPage(){
             if(e.type === 'revenue') return e.value*1
             else return (e.value *(-1))
         })
-        console.log(valuesList)
 
         for(let i =0; i < valuesList.length; i++){
             balance+= valuesList[i]
@@ -54,7 +52,6 @@ export default function MenuPage(){
 
         if(balance >= 0) color = true;
         else color = false;
-        console.log(color, balance)
 
         return (
             <>
@@ -126,7 +123,6 @@ export default function MenuPage(){
 function File({date, description, value, type, isRevenue}){
     
     const numberValue = Number(value).toFixed(2)
-    console.log(type, isRevenue, value, typeof(value), numberValue)
     
     return (
         <MyFile> 
@@ -299,7 +295,6 @@ const Value = styled.p`
 
 `
 const MyBalance = styled.div`
-background-color:green;
     display:flex;
     flex-direction: row;
     position: absolute;
@@ -326,7 +321,7 @@ background-color:green;
         line-height: 20px;
         text-align: right;
 
-        color: ${props => props.color? '#C70000': ''};
+        color: ${props => props.color? '#C70000': '#03AC00'};
     }
 
 `

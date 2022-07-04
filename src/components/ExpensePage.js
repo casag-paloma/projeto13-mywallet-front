@@ -35,13 +35,11 @@ export default function ExpensePage(){
         }
 
         const promise = axios.post(URL, formData, config);
-        console.log(URL, formData, config)
         promise.then(handleSuccess);
         promise.catch(handleError);
     }
 
     function handleSuccess(response){
-        console.log(response.data)
         navigate('/menu')
     };
 
